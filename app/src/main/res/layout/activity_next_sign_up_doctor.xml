@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NextSignUpDoctor">
+
+
+    <ImageView
+        android:id="@+id/imgCamera"
+        android:layout_width="364dp"
+        android:layout_height="208dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+
+        android:background="@drawable/white_background"
+
+        android:backgroundTint="@color/lavender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="181dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/lavender"
+        android:text="Upload your Diploma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCamera" />
+
+    <Button
+        android:id="@+id/signup_button_doctor"
+        android:layout_width="341dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/lavender"
+        android:text="Sign Up"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/specdoctor"
+        android:layout_width="331dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="352dp"
+        android:background="@drawable/custom_edittext"
+
+        android:drawablePadding="8dp"
+        android:hint="speciality"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/phonedoctor"
+        android:layout_width="334dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/custom_edittext"
+
+        android:drawableLeft="@drawable/ic_phone"
+        android:drawablePadding="8dp"
+        android:hint="Phone Number"
+        android:imeOptions="actionDone"
+        android:inputType="phone"
+        android:maxLength="15"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/specdoctor"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="@+id/specdoctor"
+        app:layout_constraintTop_toBottomOf="@+id/specdoctor" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".Account_Settings">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <ImageView
+           android:layout_width="50dp"
+           android:id="@+id/retudd"
+           android:layout_height="50dp"
+           android:src="@drawable/baseline_arrow_back_btn"
+           android:padding="14dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <com.google.android.material.imageview.ShapeableImageView
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+         android:layout_gravity="center"
+          android:layout_marginTop="60dp"
+          app:shapeAppearanceOverlay="@style/CircularShapeAppearance"
+          android:scaleType="fitXY"
+          android:id="@+id/debrunephoto"
+          android:src="@drawable/profile"
+          />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kevin debrun"
+            android:id="@+id/kevintext"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0675453688"
+            android:layout_gravity="center"
+            android:id="@+id/numbere"
+            android:textColor="#CCFFFFFF"
+
+            android:textSize="12sp"
+            />
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/btncomplete_your_info"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_marginTop="8dp"
+    android:paddingStart="12dp"
+    android:layout_gravity="center"
+    android:background="@drawable/round_back_100"
+    android:text="Complete your information"
+    android:textAllCaps="false"
+    android:textColor="@color/primary"
+    android:paddingEnd="12dp"
+
+
+    />
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+ android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#381465"
+            android:padding="15dp"
+            android:background="@drawable/rounded_corner"
+            >
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+<ImageView
+    android:id="@+id/vvv"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:tint="@color/mtrl_textinput_default_box_stroke_color"
+
+    android:src="@drawable/notification_icon"
+    />
+
+     <TextView
+         android:layout_marginStart="20dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Appointement Mode"
+         android:layout_centerVertical="true"
+         android:textSize="19dp"
+         android:layout_toEndOf="@+id/vvv"
+         android:textColor="@color/white"
+         android:textStyle="bold"
+
+
+         />
+
+       <Switch
+           android:id="@+id/switch_appointementmode"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentEnd="true"
+           android:layout_centerVertical="true"
+           android:switchMinWidth="50dp"
+
+
+           android:theme="@style/nightmodeSwitch"
+
+
+           />
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/nnn"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+
+                    android:tint="@color/mtrl_textinput_default_box_stroke_color"
+
+                    android:src="@drawable/baseline_call_24"
+                    />
+
+                <TextView
+                    android:layout_marginStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Mode"
+                    android:layout_centerVertical="true"
+                    android:textSize="19dp"
+                    android:layout_toEndOf="@+id/nnn"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+
+
+                    />
+
+                <Switch
+                    android:id="@+id/switch_contactmode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:switchMinWidth="50dp"
+                    android:theme="@style/nightmodeSwitch"
+
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+    
+    
+    
+    
+    
+
+</RelativeLayout>

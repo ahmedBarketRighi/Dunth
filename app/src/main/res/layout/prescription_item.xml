@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    app:cardElevation="8dp"
+
+
+ android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:backgroundTint="#55ABB5"
+    app:cardCornerRadius="14dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="40dp"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/main_containerofprescription"
+    >
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"   >
+
+            <TextView
+               android:id="@+id/dateofprescription"
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:fontFamily="@font/bebas"
+                android:backgroundTint="@color/blue2"
+                android:background="@drawable/btn_background_2"
+                android:text="date"
+
+
+                android:textColor="@color/mtrl_textinput_default_box_stroke_color"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        <LinearLayout
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            >
+
+
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prescription"
+                android:fontFamily="@font/shine"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="6dp"
+                android:textColor="@color/blue2"
+                android:textSize="28sp"
+                android:textStyle="bold"/>
+            <TextView
+               android:id="@+id/fullnameofprescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name:"
+                android:fontFamily="@font/dancing"
+                android:layout_marginLeft="9dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/doctornmeofprescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor Name:"
+                android:fontFamily="@font/dancing"
+                android:textStyle="bold"
+                android:layout_marginLeft="9dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Signup Login Realtime</string>
+    <string name="description">A doctor is a highly trained medical professional who diagnoses, treats, and prevents illnesses, injuries, and diseases in patients. They typically hold a medical degree and undergo extensive education and training in medical school and residency programs. Doctors play a crucial role in healthcare, providing primary care, specialized care, and emergency medical treatment.</string>
+    <string name="channel_name">Your Channel Name</string>
+    <string name="channel_description">Your Channel Description</string>
+    <string name="zahaymer">zahaymr</string>
+    <string name="select">Select Item</string>
+
+    <string name="link">
+        Click <a href="https://www.webmd.com">here</a> to get more information about Diseases.
+    </string>
+
+    <string name="description_of_diseases">Diseases, in their myriad forms, are disruptions to the normal functioning of the human body, often causing distress, impairment, or even death. They span a vast spectrum, from acute infections to chronic conditions, genetic disorders to lifestyle-related ailments. Each disease possesses its own unique set of characteristics, ranging from mild symptoms to severe debilitation.</string>
+
+
+    <string name="welcome_to_chatgpt">Welcome to ChatGPT</string>
+    <string name="write_here">Write here....</string>
+    <string name="todo">TODO</string>
+    <string name="desc">I was trained on a massive dataset of text using a machine learning technique called the transformer architecture. This enables me to understand and generate natural language responses to a wide range of questions and topics.</string>
+    <string name="main_desc">Hello! I\'m ChatGPT, a language model developed by OpenAI.</string>
+
+
+</resources>

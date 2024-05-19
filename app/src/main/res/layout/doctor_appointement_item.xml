@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    app:cardElevation="8dp"
+
+
+    android:backgroundTint="#04B5A3"
+    app:cardCornerRadius="18dp"
+    android:layout_marginTop="10dp"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/main_container5"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+
+        android:orientation="horizontal"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="4dp"
+
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/docname5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient"
+
+                android:layout_marginLeft="6dp"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvmode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mode"
+
+                android:layout_marginLeft="9dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <LinearLayout
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvdate5"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+
+                    android:drawableLeft="@drawable/baseline_calendar_month_date"
+                    android:drawablePadding="3dp"
+
+                    android:text="date"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvtime5"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/baseline_access_time_filled_time"
+                    android:drawablePadding="3dp"
+                    android:text="time"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvconfirm5"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+
+                    android:drawableLeft="@android:drawable/checkbox_on_background"
+                    android:drawablePadding="3dp"
+                    android:text="waiting"
+                    android:textColor="@color/grey"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+            <Button
+                android:id="@+id/button_canceled5"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="4dp"
+                android:padding="-9dp"
+                android:textSize="15dp"
+                android:backgroundTint="@color/primary"
+                android:text="canceled" />
+    <Button
+        android:id="@+id/confirmbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="4dp"
+        android:padding="-9dp"
+        android:textSize="15dp"
+        android:backgroundTint="#2E8300"
+        android:text="confirm" />
+    <Button
+        android:id="@+id/contactbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="4dp"
+        android:padding="-9dp"
+        android:textSize="15dp"
+        android:backgroundTint="@color/blue"
+        android:text="contact" />
+
+</LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_bb"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="-0.43in"
+            android:layout_marginTop="3dp"
+            android:scaleType="fitXY"
+
+            app:shapeAppearanceOverlay="@style/CircularShapeAppearance"
+            app:srcCompat="@drawable/andrew"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

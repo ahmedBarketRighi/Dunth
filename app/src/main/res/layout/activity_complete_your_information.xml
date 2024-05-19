@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/primary"
+    android:layout_height="match_parent"
+
+    tools:context=".CompleteYourInformation">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginBottom="100dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/returnfrominfos"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_arrow_back_btn"
+                android:padding="14dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="complete you infos"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Information:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+            android:id="@+id/desc_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:hint="Type here ...."
+            android:textColorHint="@color/purple_200"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="10dp"
+            app:layout_goneMarginTop="32dp"
+            app:helperText="description"
+            app:helperTextTextColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.055"
+            tools:layout_editor_absoluteX="33dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+
+                android:layout_height="100dp"
+                android:layout_marginTop="48dp"
+                android:textColor="#FFFFFF"
+
+                android:maxLines="5"
+            android:inputType="textMultiLine"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:id="@+id/university_layout"
+            android:hint="Uneversity"
+
+            android:textColorHint="@color/purple_200"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="10dp"
+            app:layout_goneMarginTop="32dp"
+            app:helperText="Where did you study your university major?"
+            app:helperTextTextColor="#FFFFFF"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.055"
+            tools:layout_editor_absoluteX="33dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/university"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:textColor="#FFFFFF"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:id="@+id/work_layout"
+            android:hint="work"
+
+            android:textColorHint="@color/purple_200"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="10dp"
+            app:layout_goneMarginTop="32dp"
+            app:helperText="Your previous place of work?"
+            app:helperTextTextColor="#FFFFFF"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.055"
+            tools:layout_editor_absoluteX="33dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:textColor="#FFFFFF"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:id="@+id/experience_layout"
+            android:hint="experience"
+
+            android:textColorHint="@color/purple_200"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="10dp"
+            app:layout_goneMarginTop="32dp"
+            app:helperText="years you worked"
+            app:helperTextTextColor="#FFFFFF"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.055"
+            tools:layout_editor_absoluteX="33dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/experience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:id="@+id/clinic_layout"
+            android:hint="Clinic Name"
+
+            android:textColorHint="@color/purple_200"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="10dp"
+            app:layout_goneMarginTop="32dp"
+            app:helperText="name of place where you work now"
+            app:helperTextTextColor="#FFFFFF"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.055"
+            tools:layout_editor_absoluteX="33dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/clinicname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:inputType="text"
+                android:textColor="#FFFFFF"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    android:backgroundTint="@color/ddd"
+    android:text="click here to get your current location"
+    android:id="@+id/get_location"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="make sure that you are now on your clinique to get the location of it!"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/lavender"
+            android:textSize="12dp"
+
+            />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="adresse:?"
+    android:layout_marginTop="12dp"
+    android:layout_marginStart="10dp"
+    android:textColor="@color/white"
+    android:textSize="20dp"
+    android:id="@+id/addresslocation"
+    />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="city:?"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:id="@+id/citylocation"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="countrey:?"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:id="@+id/counterylocation"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avalaible Time:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="from:"
+
+          android:layout_marginLeft="10dp"
+          android:textColor="#FFFFFF"
+          android:textSize="16sp"
+          android:textStyle="italic"/>
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/fromtime"
+          android:layout_width="64dp"
+          android:layout_height="44dp"
+          android:hint="00:30"
+          android:layout_marginLeft="4dp"
+          android:textColorHint="#656060"
+          android:inputType="number|time"
+          android:textColor="#FFFFFF"
+          />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="to:"
+
+          android:layout_marginLeft="10dp"
+          android:textColor="#FFFFFF"
+          android:textSize="16sp"
+          android:textStyle="italic"/>
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/totime"
+          android:layout_width="64dp"
+          android:layout_height="44dp"
+          android:hint="01:30"
+          android:layout_marginLeft="4dp"
+          android:textColorHint="#656060"
+          android:inputType="number|time"
+          android:textColor="#FFFFFF"
+          />
+
+
+
+
+  </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="from:"
+
+                android:layout_marginLeft="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="italic"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fromday"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:hint="MONDAY"
+                android:layout_marginLeft="4dp"
+                android:textColorHint="#656060"
+                android:inputType="text"
+                android:textColor="#FFFFFF"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="to:"
+
+                android:layout_marginLeft="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="italic"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/todayy"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:hint="FRIDAY"
+                android:layout_marginLeft="4dp"
+                android:textColorHint="#656060"
+                android:inputType="text"
+                android:textColor="#FFFFFF"
+                />
+
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/ddd"
+            android:text="Save you Information"
+            android:id="@+id/save_infos"/>
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

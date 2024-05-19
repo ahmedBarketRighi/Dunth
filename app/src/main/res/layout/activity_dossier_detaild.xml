@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DossierDetaild">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dossier Information"
+
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/primary"
+            android:textSize="32sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Information:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/primary"
+            android:textSize="27sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fullnamedos"
+            android:text="Full Name:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/fathernamedos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Father name:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/mothernamedos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mother name:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/groupdos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/addressedos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="adresse:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/dateofbirthdos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of birth:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/genderdos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/heightdos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/weightdos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medical history:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/primary"
+            android:textSize="27sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/chronicdos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="chronic history:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/imgdos1"
+            android:layout_width="380dp"
+            android:layout_height="200dp"
+            android:src="@drawable/cloud_upload"
+
+
+            />
+
+
+        <TextView
+            android:id="@+id/allergiedos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="allergies:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/imgdos2"
+            android:layout_width="380dp"
+            android:layout_height="200dp"
+            android:src="@drawable/cloud_upload"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="medications:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/primary"
+            android:textSize="27sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/medicationdos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="medication"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+
+
+        <ImageView
+            android:id="@+id/imgdos3"
+            android:layout_width="380dp"
+            android:layout_height="200dp"
+            android:src="@drawable/cloud_upload"
+
+
+            />
+
+        <Button
+            android:id="@+id/show_Prescription"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+
+            android:backgroundTint="@color/ddd"
+            android:text="Show Prescriptions" />
+
+        <Button
+            android:id="@+id/add_Prescription"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+
+            android:backgroundTint="@color/purple_700"
+            android:text="Add Prescription" />
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/btn_background_1"
+
+    tools:context=".Account_Settings">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="#073E39"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#073E39"
+            android:background="@drawable/btn_background_1"
+
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:id="@+id/returnflash"
+                android:layout_height="30dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+
+
+
+                android:layout_marginEnd="12dp"
+
+                android:background="@drawable/btn_background_1"
+                android:backgroundTint="#006E63"
+                android:padding="8dp"
+                android:src="@drawable/baseline_arrow_back_btn" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+              android:id="@+id/personalimageview"
+                app:shapeAppearanceOverlay="@style/CircularShapeAppearance"
+                android:scaleType="fitXY"
+
+                android:src="@drawable/profile"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr.AHMED RIGHI"
+android:id="@+id/nametexview"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:textSize="22sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dentist"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+android:id="@+id/special"
+                android:textColor="#CCFFFFFF"
+
+                android:textSize="18sp"
+                />
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginBottom="33dp"
+      android:layout_marginTop="-10dp"
+      android:orientation="horizontal">
+      <ImageView
+          android:layout_width="40dp"
+          android:id="@+id/phoneiv"
+          android:layout_height="40dp"
+          android:layout_marginStart="12dp"
+          android:layout_marginTop="12dp"
+
+
+
+          android:layout_marginEnd="12dp"
+
+          android:background="@drawable/btn_background_1"
+          android:backgroundTint="#006E63"
+          android:padding="8dp"
+          android:src="@drawable/baseline_call_24" />
+      <ImageView
+
+          android:id="@+id/contactwatsapp"
+          android:layout_width="40dp"
+
+          android:layout_height="40dp"
+          android:layout_marginStart="12dp"
+          android:layout_marginTop="12dp"
+
+
+
+          android:layout_marginEnd="12dp"
+
+          android:background="@drawable/btn_background_1"
+          android:backgroundTint="#006E63"
+          android:padding="8dp"
+          android:src="@drawable/baseline_chat_bubble_outline_24" />
+
+      <ImageView
+          android:layout_width="40dp"
+          android:id="@+id/emailiv"
+          android:layout_height="40dp"
+          android:layout_marginStart="12dp"
+          android:layout_marginTop="12dp"
+
+
+
+          android:layout_marginEnd="12dp"
+
+          android:background="@drawable/btn_background_1"
+          android:backgroundTint="#006E63"
+          android:padding="8dp"
+          android:src="@drawable/baseline_attach_email_24" />
+  </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="4dp"
+        android:text="Details"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvdescription"
+        android:layout_width="378dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginRight="4dp"
+        android:text="@string/description"
+        android:textDirection="ltr"
+
+        android:textSize="14dp" />
+
+
+</RelativeLayout>

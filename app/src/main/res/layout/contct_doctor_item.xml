@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+
+    app:cardCornerRadius="28dp"
+
+    android:layout_marginTop="13dp"
+    android:layout_marginLeft="56dp"
+
+
+    android:id="@+id/main_container3"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+
+        android:orientation="horizontal"
+        >
+
+
+        <LinearLayout
+            android:layout_width="322dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/docnamecontact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr.Doctor name"
+
+                android:layout_marginLeft="9dp"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvdocspeccontact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="spec"
+
+                android:layout_marginLeft="9dp"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                />
+
+            <LinearLayout
+                android:layout_width="312dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvdatecontact"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+
+                    android:drawableLeft="@drawable/baseline_calendar_month_date"
+                    android:drawablePadding="3dp"
+                    android:text="date"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvtimecontact"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/baseline_access_time_filled_time"
+                    android:drawablePadding="3dp"
+                    android:text="time"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvconfirmcontact"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+
+                    android:drawableLeft="@android:drawable/checkbox_on_background"
+                    android:drawablePadding="3dp"
+                    android:text="confirmed"
+                    android:textColor="#06C500"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_whatsapp"
+                android:layout_width="222dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="4dp"
+                android:backgroundTint="#35C600"
+                android:text="Contact" />
+
+        </LinearLayout>
+
+
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_voksv"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-0.39in"
+            android:layout_marginTop="16dp"
+
+            app:shapeAppearanceOverlay="@style/CircularShapeAppearance"
+            app:srcCompat="@drawable/andrew"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

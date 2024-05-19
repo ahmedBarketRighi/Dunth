@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:text="PRESCRIPTION"
+            android:fontFamily="@font/dancing"
+            android:gravity="center"
+            android:background="@drawable/btn_background_2"
+            android:backgroundTint="@color/lavender"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="23dp"
+
+            android:textColor="@color/mtrl_textinput_default_box_stroke_color"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/clinicnamepresc"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/dancing"
+            android:text="Al-Anwar Clinic, Al-Bahjah District, Al-Fadila Street, Branch No. 55"
+            android:layout_gravity="center"
+            android:textColor="@color/lavender"
+            android:layout_marginBottom="12dp"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/date_prescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebas"
+            android:text="Date: .../../.."
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="220dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+           />
+
+        <TextView
+            android:id="@+id/fullnamepresc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dancing"
+            android:text="Full Name:..."
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/doctornamepresc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dancing"
+            android:text="Doctor Name:..."
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Number of medications:"
+
+                android:fontFamily="@font/comfortaabold"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/number_edit_text"
+                android:gravity="center"
+
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+
+                android:hint="here"
+                android:inputType="number" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_container"
+            android:layout_below="@id/number_edit_text"
+            android:layout_width="280dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+
+
+
+        <EditText
+            android:id="@+id/signaturepresc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:hint="Signature:"
+            android:fontFamily="@font/shine"
+
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="200dp"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            android:textStyle="bold"/>
+
+
+<!--
+        <Button
+            android:id="@+id/clearsignature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:layout_marginTop="5dp"
+            android:text="clear signature"
+            android:layout_marginLeft="200dp"
+            />
+-->
+
+
+
+        <Button
+
+            android:id="@+id/save_Prescription"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Save Prescription"
+            android:gravity="center"
+            android:fontFamily="@font/dancing"
+            android:backgroundTint="#065049"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="23dp"
+            android:padding="2dp"
+
+            android:textColor="@color/mtrl_textinput_default_box_stroke_color"
+            android:textSize="23sp"
+            android:textStyle="bold"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

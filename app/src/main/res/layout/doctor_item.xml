@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="343dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="28dp"
+    android:layout_marginTop="14dp"
+    android:layout_marginLeft="10dp"
+    android:id="@+id/main_container"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    >
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_vv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="9dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/andrew"
+
+        app:shapeAppearanceOverlay="@style/CircularShapeAppearance"
+        app:srcCompat="@drawable/andrew"
+        />
+
+
+
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="104dp"
+      android:orientation="vertical"
+      >
+
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+
+     android:layout_marginTop="4dp"
+     android:layout_gravity="center_vertical"
+     android:orientation="horizontal"
+     >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+
+        android:layout_marginLeft="9dp"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+     <TextView
+         android:id="@+id/tvname"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="4dp"
+         android:text="Aymen"
+         android:textColor="@color/black"
+         android:textSize="20sp"
+         />
+
+
+ </LinearLayout>
+
+
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:orientation="horizontal"
+          >
+
+          <TextView
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="user_name:"
+
+              android:layout_marginLeft="9dp"
+              android:textColor="@color/black"
+              android:textSize="22sp"
+              android:textStyle="bold"/>
+          <TextView
+              android:id="@+id/tvusername"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="4dp"
+              android:text="Aymen_mor"
+              android:textColor="@color/black"
+              android:textSize="20sp"
+              />
+
+
+
+
+
+      </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="spec:"
+
+                android:layout_marginLeft="9dp"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvspec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="dentist"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+        <RatingBar
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvrating"
+            android:numStars="5"
+            android:progressTint="@android:color/holo_orange_dark"
+            android:rating="0"
+            android:isIndicator="true"
+
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

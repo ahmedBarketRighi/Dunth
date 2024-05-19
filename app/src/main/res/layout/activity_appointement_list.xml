@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#328FD6"
+    tools:context=".AppointementList">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/appointement_list"
+        android:layout_width="409dp"
+        android:layout_marginTop="100dp"
+        android:layout_height="match_parent"
+        android:paddingTop="14dp"
+        android:background="@drawable/btn_background_2"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.725" />
+
+
+    <Spinner
+        android:id="@+id/spinner_appointment_or_prescription"
+        android:layout_width="125dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+
+        android:textColor="@color/mtrl_textinput_default_box_stroke_color"
+        android:textSize="10dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewyour"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+
+        android:id="@+id/textViewyour"
+        android:layout_width="196dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="APPOINTEMENTS "
+
+        android:textColor="@color/mtrl_textinput_default_box_stroke_color"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

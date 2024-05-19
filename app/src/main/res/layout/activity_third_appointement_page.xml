@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ThirdAppointementPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="4dp"
+        >
+
+    <TextView
+        android:id="@+id/textView2_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="4dp"
+        android:text="Appointement Type:"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="363dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="-26dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radionormal"
+            android:layout_width="112dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:text="Normal"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/radioFollowup"
+            android:layout_width="123dp"
+
+            android:layout_height="45dp"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="28dp"
+            android:text="Follow Up"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViedd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="-24dp"
+        android:text="Appointement Mode:"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="359dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="-26dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radiononline"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:text="Online"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/radioOffline"
+            android:layout_width="99dp"
+
+            android:layout_height="45dp"
+            android:layout_marginStart="103dp"
+            android:layout_marginTop="18dp"
+            android:text="Offline at Hospital"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </RadioGroup>
+
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="12dp"
+        android:text=" Select Appointement Date:"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="12dp"
+            android:text="Avialable days :"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            />
+        <TextView
+
+            android:layout_width="350dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="22dp"
+            android:id="@+id/validdays"
+            android:gravity="center_vertical"
+            android:text="days"
+            android:background="@color/secondary"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+
+            android:text="make sure that you chooose a date on a valid
+             day!"
+            android:textSize="19dp"
+            android:textColor="#CD0202"
+            android:textStyle="italic"
+            />
+
+    <Button
+        android:id="@+id/datepickerbutton"
+        style="?android:spinnerStyle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="22dp"
+        android:text="JAN-01-2024"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="openDatePicker"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="12dp"
+            android:text="Avialable times :"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/validtimes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="22dp"
+            android:maxWidth="390dp"
+            android:paddingEnd="14sp"
+        android:background="@color/secondary"
+        android:text="times"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="22dp"
+            android:text="make sure that you chooose a time that provide!"
+            android:textSize="19dp"
+            android:textColor="#CD0202"
+            android:textStyle="italic"
+            />
+
+
+    <TimePicker
+        android:id="@+id/timepicker"
+        android:layout_width="342dp"
+        android:layout_height="355dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="286dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="14dp"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="center"
+        android:text="Confirm"
+        android:textSize="19dp"
+         />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

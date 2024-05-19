@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstAppointementPage">
+
+    <ImageView
+        android:id="@+id/imagvb"
+        android:layout_width="406dp"
+        android:layout_height="226dp"
+        android:background="@drawable/white_background"
+        android:layout_margin="4dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/doctorphoto" />
+
+    <LinearLayout
+        android:layout_width="413dp"
+        android:layout_height="496dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/doctor_name_appointement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dr.Aymen"
+            android:layout_marginLeft="4dp"
+
+            android:textStyle="bold"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/spectv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dentist"
+            android:layout_marginLeft="4dp"
+
+            android:textSize="28dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+<ImageView
+    android:layout_width="38dp"
+    android:layout_height="29dp"
+    android:src="@drawable/ff1"
+
+    />
+        <TextView
+            android:id="@+id/textViewmemeber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="500+"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginLeft="-5dp"
+
+
+            android:textSize="17dp" />
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="29dp"
+            android:src="@drawable/workex"
+            android:layout_marginLeft="56dp"
+
+            />
+        <TextView
+            android:id="@+id/textViewexper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="14 YEARS"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginLeft="-5dp"
+
+
+            android:textSize="17dp" />
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="52dp"
+
+            android:src="@drawable/star" />
+        <TextView
+            android:id="@+id/tvrate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4.5"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginLeft="-4.9dp"
+
+
+            android:textSize="17dp" />
+
+
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Available Time"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="19dp" />
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+
+         >
+         <TextView
+             android:id="@+id/textView77"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="M   T   W   T   F   S"
+             android:layout_marginLeft="4dp"
+             android:layout_marginTop="20dp"
+
+             android:textStyle="bold"
+             android:textSize="19dp" />
+         <TextView
+             android:id="@+id/textView55"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="10 AM-3 PM"
+             android:textColor="@color/white"
+             android:background="@color/black"
+             android:layout_marginLeft="22dp"
+             android:layout_marginTop="20dp"
+             android:textStyle="bold"
+             android:textSize="19dp" />
+
+
+
+     </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/textViewzz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:textSize="19dp" />
+
+        <TextView
+            android:id="@+id/tvdescription"
+            android:layout_width="378dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="4dp"
+            android:text="@string/description"
+            android:textDirection="ltr"
+
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/book_appointement"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="14dp"
+            android:text="Book Appointment"
+            android:backgroundTint="@color/black"
+
+            />
+
+        <Button
+            android:id="@+id/rating_button"
+            android:layout_width="305dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+
+
+            android:layout_marginRight="14dp"
+            android:backgroundTint="#DDAD00"
+            android:text="Rating"
+            android:textColor="@color/black"
+
+            />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
